@@ -21,7 +21,9 @@ network={
 
 The list below is if you want to use Shairport Sync (see https://github.com/mikebrady/shairport-sync for instructions).
 
-```sudo apt-get install avahi-utils build-essential chkconfig git libao-dev libavahi-client-dev libcrypt-openssl-rsa-perl libio-socket-inet6-perl libssl-dev libwww-perl pkg-config build-essential git xmltoman autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev```
+```
+sudo apt-get install avahi-utils build-essential chkconfig git libao-dev libavahi-client-dev libcrypt-openssl-rsa-perl libio-socket-inet6-perl libssl-dev libwww-perl pkg-config build-essential git xmltoman autoconf automake libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
+```
 
 ## Install Spotify connect
 
@@ -33,7 +35,7 @@ chmod u+x spotify-connect-web.sh
 
 Hint: bug fixes in master branch. You can edit line 9 in the above shell script to download master branch instead of 0.3 release.
 
-Add `spotify_appkey.key` to `spotify-connect-web-chroot/usr/src/app/`.
+Add `spotify_appkey.key` to `/home/pi/spotify-connect-web-chroot/usr/src/app/`
 
 ## alsa-base.conf
 
@@ -49,7 +51,7 @@ options snd slots=snd_usb_audio,snd_bcm2835
 ```
 
 ## asound.conf
-Locations: `/etc/asound.conf` and  `~/spotify-connect-web-chroot/etc/asound.conf`
+Locations: `/etc/asound.conf` and  `/home/pi/spotify-connect-web-chroot/etc/asound.conf`
 
 ```
 pcm.plug {
