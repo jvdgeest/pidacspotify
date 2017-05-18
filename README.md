@@ -79,3 +79,13 @@ StartLimitBurst=20
 [Install]
 WantedBy=multi-user.target
 ```
+
+First time installation of this service (place `scs.service` in your home folder):
+
+```
+sudo mv ~/scs.service /etc/systemd/system/scs.service
+sudo chmod a+u /etc/systemd/system/scs.service
+sudo systemctl daemon-reload
+sudo systemctl enable scs.service
+sudo systemctl start scs.service
+```
